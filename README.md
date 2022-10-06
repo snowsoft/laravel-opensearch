@@ -1,8 +1,8 @@
 # laravel-opensearch
 OpenSearch implementation for Laravel
 
-[![Build Status](https://travis-ci.org/matthewbdaly/laravel-opensearch.svg?branch=master)](https://travis-ci.org/matthewbdaly/laravel-opensearch)
-[![Coverage Status](https://coveralls.io/repos/github/matthewbdaly/laravel-opensearch/badge.svg?branch=master)](https://coveralls.io/github/matthewbdaly/laravel-opensearch?branch=master)
+[![Build Status](https://travis-ci.org/snowsoft/laravel-opensearch.svg?branch=master)](https://travis-ci.org/snowsoft/laravel-opensearch)
+[![Coverage Status](https://coveralls.io/repos/github/snowsoft/laravel-opensearch/badge.svg?branch=master)](https://coveralls.io/github/snowsoft/laravel-opensearch?branch=master)
 
 Installation
 ------------
@@ -10,7 +10,7 @@ Installation
 First, install the package:
 
 ```bash
-composer require matthewbdaly/laravel-opensearch
+composer require snowsoft/laravel-opensearch
 ```
 
 Then publish the config:
