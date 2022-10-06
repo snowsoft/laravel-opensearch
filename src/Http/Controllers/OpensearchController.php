@@ -21,7 +21,20 @@ class OpensearchController extends BaseController
      */
     public function index()
     {
-        $content = view('opensearch::xml', config('opensearch'))->render();
+        $config =  config('opensearch');
+        $shortname = ((isset($config['shortname'])) ? $config['shortname']:null);
+        $description = ((isset($config['description']))? $config['description']:null);
+        $template = ((isset($config['template'])) ? $config['template']:null);
+
+        $content = <<<EOF
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns:moz="http://www.mozilla.org/2006/browser/search/" xmlns="http://a9.com/-/spec/opensearch/1.1/">
+   <ShortName>$shortname</ShortName>
+   <Description>$description</Description>
+   <InputEncoding>UTF-8</InputEncoding>
+   <Url method='get' type='text/html' template='$template'/>
+</OpenSearchDescription> EOF;
+
         return response($content, 200)->header('Content-Type', 'text/xml');
     }
 }
