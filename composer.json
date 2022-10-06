@@ -1,5 +1,5 @@
 {
-    "name": "matthewbdaly/laravel-opensearch",
+    "name": "snowosft/laravel-opensearch",
     "description": "Opensearch implementation for Laravel",
     "type": "library",
     "keywords": ["laravel","lumen", "search", "opensearch"],
